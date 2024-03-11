@@ -1,6 +1,4 @@
-# EXPERIMENT-NO--04-Distance measurement using Ultrasonic sensor
- ###  DATE: 
-
+EXPERIMENT-NO--04-Distance measurement using Ultrasonic sensor
 ###  NAME: V.Gajalakshmi
 ###  ROLL NO :212223040047
 ###  DEPARTMENT:Computer science and engineering

@@ -1,9 +1,9 @@
 # EXPERIMENT-NO--04-Distance measurement using Ultrasonic sensor
  ###  DATE: 
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT:
+###  NAME: V.Gajalakshmi
+###  ROLL NO :212223040047
+###  DEPARTMENT:Computer science and engineering
 ## AIM: 
 To interface an ultrasonic pair and measure the distance in centimeters , calculate the error
  
@@ -60,6 +60,48 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 ### PROGRAM 
 ```
+const int trigpin=10;
+const int echopin=9;
+int red=7;
+int green=6;
+long duration;
+int distance;
+
+void setup()
+{
+  pinMode(trigpin, OUTPUT);
+    pinMode(echopin, INPUT);
+    pinMode(red, OUTPUT);
+    pinMode(green, OUTPUT);
+  Serial.begin(9600);
+ }
+
+void loop()
+{
+  digitalWrite(trigpin, LOW);
+  delay(20); 
+  digitalWrite(trigpin, HIGH);
+  delay(20);
+    digitalWrite(trigpin, LOW);
+duration=pulseIn(echopin,HIGH);
+  distance=duration*0.034/2;
+  Serial.print(distance);
+  Serial.println("cms");
+  if(distance>5)
+  {
+     digitalWrite(red, HIGH);
+  delay(200); 
+   digitalWrite(red, LOW);
+  delay(200);
+  }
+  else
+  {
+     digitalWrite(green, HIGH);
+  delay(200); 
+   digitalWrite(green, LOW);
+  delay(200); 
+  }
+}
 
 
 
@@ -69,17 +111,21 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 
 
-
-`````````
+```
 
 
 ### Distance vs measurement table 
 
 			
- 
-			
-			
-			
+![robo9](https://github.com/Gajalakshmivelmurugan/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/144871940/dabe4a6d-71c2-4f37-9f12-c56110605f74)
+
+![robo11](https://github.com/Gajalakshmivelmurugan/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/144871940/437ca9a3-9006-432a-909d-17f42612e5b5)
+
+ ### Schematic diagram
+
+  ![Screenshot 2024-03-11 163458](https://github.com/Gajalakshmivelmurugan/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/144871940/d321cc3a-b31f-408b-ba1f-10d3b867fb27)
+![robo6](https://github.com/Gajalakshmivelmurugan/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/144871940/68c32cb3-8b10-4031-af94-e87bd912c489)
+
 
 ![image](https://user-images.githubusercontent.com/36288975/190135379-52ebacd5-ccd5-460f-a4cd-4d0ad1d9b179.png)
 

@@ -141,8 +141,9 @@ duration=pulseIn(echopin,HIGH);
 
 
 
-### RESULTS
+### RESULTS :
 
+Thus the distance value is measured in "CM" using ultrasonic sensor
 
 
  

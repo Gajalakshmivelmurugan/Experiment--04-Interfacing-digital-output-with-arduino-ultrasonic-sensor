@@ -127,7 +127,6 @@ duration=pulseIn(echopin,HIGH);
 ![robo6](https://github.com/Gajalakshmivelmurugan/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/144871940/68c32cb3-8b10-4031-af94-e87bd912c489)
 
 
-![image](https://user-images.githubusercontent.com/36288975/190135379-52ebacd5-ccd5-460f-a4cd-4d0ad1d9b179.png)
 
 			
 			
